@@ -92,6 +92,7 @@ Want to go deeper?
 - `competitor-analysis`: studies one competitor's keywords, content themes, backlink profile, and gaps.
 - `local-seo`: audits a Google Business Profile against local competitors and maps Maps visibility around a location.
 - `link-prospecting`: finds likely link opportunities, discovers contact paths, and drafts outreach.
+- `cms-content-updates`: turns audit and Search Console findings into title, meta description, heading, alt text, and copy edits, saved as drafts in a Payload CMS through its MCP server. Needs the Payload MCP plugin connected.
 - `seo-report`: the report-writing skill the workflows above deliver through. It carries the starter template and the save rules; users do not run it on its own.
 
 ## Tool coaching

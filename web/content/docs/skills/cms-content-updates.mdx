@@ -1,0 +1,57 @@
+---
+title: "CMS Content Updates Agent Skill"
+description: "Turn OpenSEO site audit and Search Console findings into title, meta description, heading, and copy edits saved as drafts in your Payload CMS."
+---
+
+<RunSkillCallout command="/cms-content-updates" />
+
+The CMS Content Updates Agent Skill takes SEO findings all the way to your content. Instead of handing you a list of fixes, your agent writes the edits and saves them as drafts in your Payload CMS.
+
+Your agent reads Search Console and site audit data in OpenSEO, finds the pages where a content change is the fix, and maps each URL to its document in Payload. It proposes the edits, waits for your approval, then saves them as drafts. Nothing goes live until you publish.
+
+## What this skill helps your agent do
+
+- Find pages with many impressions but few clicks, and rewrite their titles and meta descriptions around the queries they actually show up for.
+- Fix content issues from a site audit: missing or duplicate titles, missing meta descriptions, missing or repeated H1 headings, thin pages, and images without alt text.
+- Improve pages ranking just off the first page by adding the section searchers are missing.
+- Map each URL to its Payload document without guessing.
+- Save approved edits as drafts and confirm each one landed as intended.
+- Record what changed so you can compare Search Console results a few weeks later.
+
+## When to use it
+
+Use this skill when your site runs on Payload CMS and you want SEO fixes applied to the content, not just reported.
+
+It works best after you have connected Google Search Console in OpenSEO, since click and impression data shows which pages and queries are worth the edit. Without it, the skill works from site audit findings alone.
+
+## Before you start
+
+Your agent needs two MCP connections:
+
+1. [OpenSEO MCP](/docs/mcp) for the SEO data.
+2. Payload's MCP server. Add `mcpPlugin` from `@payloadcms/plugin-mcp` to your Payload config, create an API key for a Payload user who can edit your pages, and connect your agent to `https://<your-payload-site>/api/mcp` with the header `Authorization: users API-Key <key>`. See the [Payload MCP plugin docs](https://payloadcms.com/docs/plugins/mcp).
+
+Turn on drafts for your page collections in Payload. With drafts on, every edit stays unpublished until you review it. Without drafts, an update goes live right away, so the skill asks you twice before saving it.
+
+## What you get back
+
+A table of the drafts your agent saved (page, field, before, after), the pages it left alone and why, any technical issues that need a developer, and a date to recheck results in Search Console.
+
+## How to get the best result
+
+- Give the agent your domain and tell it which Payload collections hold your public pages if you have many.
+- Review the proposed edits before approving. You can approve some rows and skip others.
+- Publish the drafts from the Payload admin, then come back after four to six weeks and ask the agent to compare results.
+- Keep the scope to a handful of important pages per run.
+
+## Read the actual skill
+
+The source `SKILL.md` lives on GitHub:
+
+- [CMS Content Updates skill](https://github.com/every-app/open-seo/tree/main/.agents/skills/cms-content-updates)
+
+## Related skills
+
+- [SEO Audit](/docs/skills/seo-audit) if you want a prioritized report before changing anything.
+- [SEO Project Setup](/docs/skills/seo-project-setup) to connect Search Console and save your key pages.
+- [Keyword Research](/docs/skills/keyword-research) when a page needs a better target query before you rewrite it.

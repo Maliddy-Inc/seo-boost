@@ -54,6 +54,8 @@ function parseSkill(path: string, raw: string): SamSkill | null {
   if (frontmatter.name === "simple-issue-description") return null;
   // SAM has no report tools, so the report-writing skill has nothing to drive.
   if (frontmatter.name === "seo-report") return null;
+  // Edits go through the user's own CMS MCP server, which SAM cannot reach.
+  if (frontmatter.name === "cms-content-updates") return null;
   return {
     name: frontmatter.name,
     description: frontmatter.description,
