@@ -16,11 +16,12 @@ Run these two commands in Claude Code:
 
 If the install summary says `Run /reload-plugins to activate.`, run that command.
 
-Claude Code connects OpenSEO MCP at `https://app.openseo.so/mcp` and enables ten skills:
+Claude Code connects OpenSEO MCP at `https://app.openseo.so/mcp` and enables eleven skills:
 
 - SEO Project Setup
 - SEO Coach
 - SEO Audit
+- CMS Content Updates
 - Keyword Research
 - Keyword Clustering
 - Competitive Landscape
@@ -41,6 +42,7 @@ Plugin skills are namespaced by the plugin name:
 /openseo:seo-project-setup
 /openseo:seo-coach
 /openseo:seo-audit
+/openseo:cms-content-updates
 /openseo:keyword-research
 /openseo:keyword-clustering
 /openseo:competitive-landscape

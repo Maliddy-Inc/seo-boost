@@ -86,6 +86,7 @@ After the skill files are available to your agent, run the matching slash comman
 - `/link-prospecting`
 - `/local-seo`
 - `/seo-audit`
+- `/cms-content-updates`
 
 ## Next step
 

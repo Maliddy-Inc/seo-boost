@@ -28,6 +28,7 @@ MCP connects your agent to OpenSEO data. Skills tell your agent which SEO workfl
 ## Audit workflows
 
 - [SEO Audit](/docs/skills/seo-audit): audit a site and understand its important problems, worthwhile improvements, and likely effects on traffic and the business.
+- [CMS Content Updates](/docs/skills/cms-content-updates): turn audit and Search Console findings into edits saved as drafts in your Payload CMS.
 
 ## Research workflows
 

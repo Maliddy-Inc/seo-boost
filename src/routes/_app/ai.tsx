@@ -22,6 +22,10 @@ const SKILLS = [
     "seo-audit",
     "One-page site audit built around a single do-this-week action.",
   ],
+  [
+    "cms-content-updates",
+    "Saves SEO fixes as drafts in your Payload CMS for you to review.",
+  ],
   ["keyword-research", "Finds keyword opportunities from a few seed topics."],
   ["keyword-clustering", "Groups keywords by intent and maps them to pages."],
   ["competitive-landscape", "Maps who wins in your market and why."],
